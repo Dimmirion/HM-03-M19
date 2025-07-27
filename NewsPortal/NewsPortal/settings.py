@@ -124,3 +124,6 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = '/posts/'  # или имя URL-шаблона, например 'post_list'
+LOGIN_URL = '/login/'  # URL для входа (можно использовать имя маршрута 'login')
